@@ -1,0 +1,150 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: url(images/snake.jpeg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+h1 
+{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: underline;
+
+}
+#board 
+{
+    border: 3px solid black;
+    border-radius: 4px;
+}
+img 
+{
+    width: 50px;
+    height: 70px;
+    cursor: pointer;
+}
+.btn 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    margin-top: 20px;
+}
+.scorebox
+{
+    display: flex;
+    align-items: center;
+    background-color: rgb(245, 243, 243);
+    padding: 5px;
+    width: 115px;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    font-size: 1.6em;
+    font-weight: 700;
+    font-style: oblique;
+    color: rgb(1, 1, 224);
+}
+.reset
+{
+    background-color: rgb(235, 240, 240);
+    font-size: 1.6em;
+    font-weight: 700;
+    padding: 10px;
+    font-style: oblique;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+}
+.score 
+{
+    color: rgb(234, 7, 7);
+    font-size: 1.3em;
+}
+.arrow 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:20%;
+    height: auto;
+    gap: 5px;
+}
+.arrow button 
+{
+    width: 100px;
+    height: 100px;
+    cursor: pointer; 
+    border-radius: 50%;  
+    border: 3px solid black;
+    outline: none;
+}
+.tab 
+{
+    font-size: 1.5em;
+}
+.arrowset
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left
+{
+    transform: rotateZ(0deg);
+}
+.right
+{
+    transform: rotateY(180deg);
+}
+.top
+{
+    transform: rotateZ(90deg);
+}
+.down
+{
+    transform: rotateZ(-90deg);
+}
+@media(max-width:800px)
+{
+    img 
+    {
+        height: 50px;
+        width: 45px;
+    }
+    .arrow button 
+    {
+        height: 80px;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .arrow
+    {
+        width: 70%;
+    }
+    .tab 
+    {
+        font-size: 1.2em;
+    }
+    .btn 
+    {
+        width: 70%;
+    }
+}

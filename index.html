@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>snake</h1>
+        <canvas id="board" width="300" height="300"></canvas>
+    <div class="btn">
+        <div class="scorebox">score:<span class="score">0</span></div>
+        <button type="reset" class="reset">Restart</button>
+    </div>
+    <div class="arrow">
+       <img src="images/arrow.png" class="left" id="arrow" alt="" data-side="left">
+        <div class="arrowset">
+           <img src="images/arrow.png" class="top" id="arrow" alt="" data-side="up">
+           <button class="tab" id="arrow" data-side="tab">Pause</button>
+           <img src="images/arrow.png" class="down" id="arrow" alt="" data-side="down">
+        </div>
+        <img src="images/arrow.png" class="right" id="arrow" alt="" data-side="right">
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
